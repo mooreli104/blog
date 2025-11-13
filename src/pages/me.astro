@@ -6,7 +6,6 @@ import ContactRow from "../components/contact-row.astro";
 import { WORK_EXPERIENCE } from "../config";
 import { Image } from "astro:assets";
 import { PROJECTS,ME_AVATAR } from "../config";
-import { Icon } from "astro-icon/components";
 ---
 
 <Layout hideFooter title="About Me">
@@ -14,7 +13,7 @@ import { Icon } from "astro-icon/components";
     <div class="bg-neutral-900/60 rounded-lg p-4 mt-[60px] md:mt-[80px] mb-6">
       <div class="flex-col md:flex-row flex items-center justify-center gap-6 md:gap-10 h-full text-white">
         <div>
-          <h3 class="text-white text-2xl font-logo">Hello, I am Leo!</h3>
+          <h3 class="text-white text-2xl font-logo">Hey, I'm Moore!</h3>
           <p class="font-mono text-slate-400 my-6 mb-10" set:html={ME_DESCRIPTION} />
           <h3 class="text-white text-2xl font-logo mb-5">Contacts</h3>
           <ContactRow />
@@ -43,8 +42,8 @@ import { Icon } from "astro-icon/components";
             <a
               class="px-4 py-2 border border-slate-400"
               target="_blank"
-              href="YOUR_RESUME_URL"
-              download="Resume.pdf"
+              href="Moore_Li_Resume.pdf"
+              download="Moore_Li_Resume.pdf"
             >
               <div class="flex gap-2 items-center text-white justify-center">
                 <span>Open CV</span>
@@ -77,7 +76,6 @@ import { Icon } from "astro-icon/components";
                     >
                       <h4 class="text-lg">{item.title}</h4>
 
-                      <Icon name="mdi:external-link" class="w-3 h-3" />
                     </a>
                   ) : (
                     <h4 class="text-lg text-slate-200">{item.title}</h4>
